@@ -1,0 +1,340 @@
+[helpdesk]
+Status = complete
+Build = 20190702
+Name = helpdesk
+Display_Name = Helpdesk
+Version = 3.0.0
+Author = QNAP Systems, Inc.
+QPKG_File = helpdesk.qpkg
+Date = 2019-07-12
+Shell = /mnt/HDA_ROOT/update_pkg/helpdesk/helpdesk.sh
+Install_Path = /mnt/HDA_ROOT/update_pkg/helpdesk
+WebUI = /apps/qdesk/
+Web_Port = -1
+Web_SSL_Port = -1
+RC_Number = 200
+Sys_App = 0
+Desktop = 1
+Use_Proxy = 0
+Enable = TRUE
+App_ID = A048
+Class = null
+Visible = 1
+Win_Min_Width = 990
+Win_Min_Height = 600
+FW_Ver_Min = 4.1.0
+
+[Qboost]
+Status = complete
+Name = Qboost
+Display_Name = Qboost
+Version = 1.2.0
+Build = 20190704
+Enable = TRUE
+QPKG_File = Qboost.qpkg
+Date = 2019-07-10
+Shell = /mnt/ext/opt/Qboost/qboost.sh
+Install_Path = /mnt/ext/opt/Qboost
+Web_Port = -1
+WebUI = QTS_desktop
+Author = QNAP Systems, Inc.
+Sys_App = 2
+Desktop = 1
+Visible = 1
+Force_Visible = 1
+App_ID = A234
+
+[ResourceMonitor]
+Status = complete
+Name = ResourceMonitor
+Display_Name = Resource Monitor
+Version = 1.1.0
+Build = 20190704
+Exec_Files = /etc/init.d/qpkg_res.sh
+Enable = TRUE
+QPKG_File = ResourceMonitor.qpkg
+Date = 2019-07-10
+Alt_Shell = /mnt/ext/opt/ResourceMonitor/qpkg_res.sh
+Install_Path = /mnt/ext/opt/ResourceMonitor
+Web_Port = -1
+WebUI = QTS_desktop
+Author = QNAP Systems, Inc.
+Sys_App = 2
+Force_Visible = 1
+FW_Ver_Max = 4.3.9
+FW_Ver_Min = 4.3.0
+
+[QsyncServer]
+Status = complete
+Name = QsyncServer
+Display_Name = Qsync Central
+Version = 3.0.4.3
+Build = 20190704
+Exec_Files = /etc/init.d/qsyncsrv.sh
+Enable = TRUE
+QPKG_File = QsyncServer.qpkg
+Date = 2019-07-10
+Shell = /share/CE_CACHEDEV1_DATA/.qpkg/QsyncServer/qsyncsrv.sh
+Install_Path = /share/CE_CACHEDEV1_DATA/.qpkg/QsyncServer
+Web_Port = -1
+WebUI = QTS_desktop
+Author = QNAP Systems, Inc.
+Visible = 2
+Timeout = 3000,15
+Class = null
+App_ID = A213
+FW_Ver_Max = 4.3.9
+FW_Ver_Min = 4.3.5
+
+[netmgr]
+Status = complete
+Name = netmgr
+Version = 2.0.1
+Author = QNAP
+QPKG_File = netmgr.qpkg
+Date = 2019-07-10
+Alt_Shell = /mnt/ext/opt/netmgr/netmgr.sh
+Install_Path = /mnt/ext/opt/netmgr
+WebUI = /apps/netmgr/
+Web_Port = -1
+Display_Name = Network & Virtual Switch
+Desktop = 1
+Sys_App = 2
+Force_Visible = 1
+Enable = TRUE
+App_ID = A201
+FW_Ver_Min = 4.3.5
+
+[CloudLink]
+Name = CloudLink
+Class = null
+Status = complete
+Build = 20190504
+Version = 2.2.11
+Author = QNAP Systems, Inc.
+QPKG_File = CloudLink.qpkg
+Date = 2019-06-17
+Shell = /share/CE_CACHEDEV1_DATA/.qpkg/CloudLink/CloudLink.sh
+Volume_Select = 3
+Install_Path = /share/CE_CACHEDEV1_DATA/.qpkg/CloudLink
+RC_Number = 101
+Desktop = 1
+WebUI = null
+Display_Name = CloudLink
+Open_In = MyCloudNas,4
+Enable = TRUE
+DisclaimerStatus = 1
+FW_Ver_Min = 4.1.2
+
+[NotificationCenter]
+Name = NotificationCenter
+Status = complete
+Display_Name = Notification Center
+Version = 1.0.1838
+Author = QNAP Systems, Inc.
+QPKG_File = NotificationCenter.qpkg
+Date = 2019-07-10
+Alt_Shell = /mnt/ext/opt/NotificationCenter/etc/init.d/nc.sh
+Install_Path = /mnt/ext/opt/NotificationCenter
+WebUI = /nc/
+Web_Port = -1
+RC_Number = 101
+Sys_App = 2
+App_ID = A008
+Desktop = 1
+Win_Min_Width = 1170
+Win_Min_Height = 580
+Force_Visible = 1
+Enable = TRUE
+FW_Ver_Min = 4.3.5
+FW_Ver_Max = 4.4.0
+
+[SSDLaboratory]
+Name = SSDLaboratory
+Display_Name = SSD Profiling Tool
+Version = 1.0.0960
+Build = 20190704
+Enable = FALSE
+QPKG_File = SSDProfilingTool.qpkg
+Date = 2019-07-10
+Shell = /mnt/ext/opt/SSDLaboratory/ssd_lab.sh
+Install_Path = /mnt/ext/opt/SSDLaboratory
+Web_Port = 8080
+WebUI = QTS_desktop
+Author = QNAP Systems, Inc.
+Sys_App = 2
+Desktop = 1
+Build_Number = 20190704
+platform = x86_64
+built_on = 4.3.6
+Force_Visible = 1
+Status = complete
+
+[PlexMediaServer]
+Name = PlexMediaServer
+Class = null
+Status = complete
+Version = 1.15.4
+Author = Plex Build Team
+QPKG_File = PlexMediaServer.qpkg
+Date = 2019-05-03
+Shell = /share/CE_CACHEDEV1_DATA/.qpkg/PlexMediaServer/plex.sh
+Install_Path = /share/CE_CACHEDEV1_DATA/.qpkg/PlexMediaServer
+WebUI = /web
+Web_Port = 32400
+Web_SSL_Port = 32400
+RC_Number = 101
+Enable = TRUE
+Build = 20190422
+Display_Name = PlexMediaServer
+Volume_Select = 3
+Timeout = 10,30
+FW_Ver_Min = 4.3.0
+FW_Ver_Max = 4.9.9
+
+[container-station]
+Name = container-station
+Class = null
+Status = complete
+Build = 20190528
+Display_Name = Container Station
+Version = 2.0.356
+Author = QNAP Systems, Inc.
+QPKG_File = container-station.qpkg
+Date = 2019-06-24
+Shell = /share/CE_CACHEDEV1_DATA/.qpkg/container-station/container-station.sh
+Install_Path = /share/CE_CACHEDEV1_DATA/.qpkg/container-station
+WebUI = /container-station/
+Web_Port = -1
+Web_SSL_Port = -1
+RC_Number = 101
+Desktop = 1
+repository = /share/CE_CACHEDEV1_DATA/.qpkg/container-station/repository
+Timeout = 3600,3600
+App_ID = A214
+Enable = TRUE
+FW_Ver_Min = 4.3.5
+FW_Ver_Max = 4.5.0
+
+[ubuntu-hd]
+Name = ubuntu-hd
+Class = null
+Status = complete
+Build = 20190605
+Display_Name = Linux Station
+Version = 1.7.2657
+Author = QNAP Systems, Inc.
+QPKG_File = ubuntu-hd.qpkg
+Date = 2019-07-12
+Shell = /share/CE_CACHEDEV1_DATA/.qpkg/ubuntu-hd/ubuntu-hd.sh
+Volume_Select = 3
+Install_Path = /share/CE_CACHEDEV1_DATA/.qpkg/ubuntu-hd
+WebUI = QTS_desktop
+Web_Port = -1
+Web_SSL_Port = -1
+RC_Number = 102
+Desktop = 1
+Enable = TRUE
+App_ID = A215
+FW_Ver_Min = 4.3.5
+FW_Ver_Max = 4.5.0
+Dependency = container-station
+
+[HD_Station]
+Name = HD_Station
+Class = null
+Status = complete
+Build = 20190124
+Display_Name = HybridDesk Station
+Version = 3.2.10
+Author = QNAP Systems, Inc.
+QPKG_File = HD_Station.qpkg
+Date = 2019-06-17
+Shell = /share/CE_CACHEDEV1_DATA/.qpkg/HD_Station/HD_Station.sh
+Volume_Select = 3
+Install_Path = /share/CE_CACHEDEV1_DATA/.qpkg/HD_Station
+RC_Number = 101
+Timeout = 60,120
+Open_In = hdStation
+Enable = FALSE
+App_ID = A232
+
+[QDMS]
+Name = QDMS
+Class = null
+Status = complete
+Build = 20190604
+Display_Name = Media Streaming Add-on
+Version = 430.1.8.5
+Author = QNAP Systems, Inc.
+QPKG_File = QDMS.qpkg
+Date = 2019-07-06
+Shell = /share/CE_CACHEDEV1_DATA/.qpkg/QDMS/QDMS.sh
+Volume_Select = 3
+Install_Path = /share/CE_CACHEDEV1_DATA/.qpkg/QDMS
+WebUI = /apps/upnp
+Web_Port = -1
+RC_Number = 101
+Enable = TRUE
+App_ID = A228
+
+[LicenseCenter]
+Name = LicenseCenter
+Status = complete
+Version = 1.2.15
+Author = QNAP Systems, Inc.
+QPKG_File = LicenseCenter.qpkg
+Date = 2019-07-10
+Alt_Shell = /mnt/ext/opt/LicenseCenter/LicenseCenter.sh
+Install_Path = /mnt/ext/opt/LicenseCenter
+RC_Number = 101
+Desktop = 1
+WebUI = QTS_desktop
+Display_Name = License Center
+Sys_App = 2
+Force_Visible = 1
+Enable = TRUE
+App_ID = A218
+
+[QcloudSSLCertificate]
+Name = QcloudSSLCertificate
+Status = complete
+Version = 2.2.11
+Author = QNAP Systems, Inc.
+QPKG_File = QcloudSSLCertificate.qpkg
+Date = 2019-07-10
+Alt_Shell = /mnt/ext/opt/QcloudSSLCertificate/QcloudSSLCertificate.sh
+Volume_Select = 3
+Install_Path = /mnt/ext/opt/QcloudSSLCertificate
+RC_Number = 101
+Desktop = 1
+WebUI = null
+Display_Name = QTS SSL Certificate
+Open_In = MyCloudNas,6
+Sys_App = 2
+Enable = TRUE
+
+[QDK]
+Name = QDK
+Class = null
+Status = complete
+cfg:/etc/config/qdk.conf = 0
+Build = 20180814
+Display_Name = QDK
+Version = 2.3.3
+Author = micke
+QPKG_File = QDK.qpkg
+Date = 2019-07-14
+Shell = /share/CE_CACHEDEV1_DATA/.qpkg/QDK/qdk
+Install_Path = /share/CE_CACHEDEV1_DATA/.qpkg/QDK
+RC_Number = 181
+Enable = TRUE
+
+[autorun]
+Name = autorun
+Version = 1.0
+QPKG_File = autorun.qpkg // Ohne diese Zeile wird das Script deaktiviert!
+Shell = /share/CACHEDEV1_DATA/.qpkg/autorun/autorun.sh // ggf. anpassen
+Install_Path = /share/CACHEDEV1_DATA/.qpkg/autorun // ggf. anpassen
+Enable = TRUE
+Official = 0
