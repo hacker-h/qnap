@@ -18,3 +18,9 @@ Executable defined in `autorun.sh`
 
 ## qpkg.conf
 `/etc/config/qpkg.conf`
+
+## Entware Installation
+https://github.com/Entware/Entware/wiki/Install-on-QNAP-NAS
+
+## Git Installation
+`opkg install git`
